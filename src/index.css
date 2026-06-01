@@ -1,0 +1,20 @@
+@import 'leaflet/dist/leaflet.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-bg text-primary font-sans antialiased; }
+  h1,h2,h3,h4,h5,h6 { @apply font-semibold tracking-tight; }
+}
+
+@layer components {
+  .btn-primary { @apply bg-coral text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-coral-dark transition-colors inline-flex items-center gap-2; }
+  .btn-secondary { @apply bg-white text-navy border border-border px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-sand-light transition-colors inline-flex items-center gap-2; }
+  .btn-teal { @apply bg-teal text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-teal-dark transition-colors inline-flex items-center gap-2; }
+  .card { @apply bg-white rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow; }
+  .section { @apply py-16 px-4; }
+  .container { @apply max-w-7xl mx-auto; }
+  .badge { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium; }
+}
